@@ -76,7 +76,7 @@
         <!--Home View Controller-->
         <scene sceneID="eFA-Bg-LSf">
             <objects>
-                <viewController id="fqi-Sy-y9k" customClass="HomeViewController" customModule="tumblr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeBoard" id="fqi-Sy-y9k" customClass="HomeViewController" customModule="tumblr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mCf-hB-3cM"/>
                         <viewControllerLayoutGuide type="bottom" id="JwF-S4-Rf0"/>
@@ -105,7 +105,7 @@
         <!--Search View Controller-->
         <scene sceneID="Oqu-87-6rK">
             <objects>
-                <viewController id="buT-gg-2H2" customClass="SearchViewController" customModule="tumblr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="searchBoard" id="buT-gg-2H2" customClass="SearchViewController" customModule="tumblr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rXy-Kb-3Me"/>
                         <viewControllerLayoutGuide type="bottom" id="Aj3-wt-OzJ"/>
@@ -128,7 +128,7 @@
         <!--Account View Controller-->
         <scene sceneID="Th9-vl-Q7k">
             <objects>
-                <viewController id="KY0-mY-H8v" customClass="AccountViewController" customModule="tumblr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="accountBoard" id="KY0-mY-H8v" customClass="AccountViewController" customModule="tumblr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ojH-0G-HcW"/>
                         <viewControllerLayoutGuide type="bottom" id="nav-kO-6sZ"/>
@@ -151,7 +151,7 @@
         <!--Compose View Controller-->
         <scene sceneID="nwu-2U-kci">
             <objects>
-                <viewController id="oq9-9v-f07" customClass="ComposeViewController" customModule="tumblr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="composeBoard" id="oq9-9v-f07" customClass="ComposeViewController" customModule="tumblr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xqx-Hj-7Jh"/>
                         <viewControllerLayoutGuide type="bottom" id="4uo-dV-N6D"/>
@@ -201,7 +201,7 @@
         <!--Trending View Controller-->
         <scene sceneID="Tvu-i3-wqG">
             <objects>
-                <viewController id="l9i-8L-9SA" customClass="TrendingViewController" customModule="tumblr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="trendingBoard" id="l9i-8L-9SA" customClass="TrendingViewController" customModule="tumblr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gg5-Xz-sgf"/>
                         <viewControllerLayoutGuide type="bottom" id="XSx-Lz-HuG"/>
