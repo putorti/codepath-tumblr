@@ -11,6 +11,7 @@ import UIKit
 class TabBarViewController: UIViewController {
 
     @IBOutlet weak var contentView: UIView!
+    @IBOutlet var buttons: [UIButton]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
