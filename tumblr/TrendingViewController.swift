@@ -8,11 +8,16 @@
 
 import UIKit
 
-class TrendingViewController: UIViewController {
+class TrendingViewController: UIViewController, UIScrollViewDelegate {
 
+    @IBOutlet weak var trendingScroller: UIScrollView!
+    @IBOutlet weak var trendingImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        trendingScroller.delegate = self
+        trendingScroller.contentSize = (trendingImage.image?.size)!
+        
         // Do any additional setup after loading the view.
     }
 
@@ -21,7 +26,6 @@ class TrendingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 
