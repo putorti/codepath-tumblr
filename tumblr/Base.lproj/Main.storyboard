@@ -20,25 +20,40 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="owj-LS-iuz">
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDj-nq-7p3">
-                                        <rect key="frame" x="0.0" y="0.0" width="64" height="44"/>
-                                        <state key="normal" image="home_icon"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hE-LN-j4C">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hE-LN-j4C">
                                         <rect key="frame" x="64" y="0.0" width="64" height="44"/>
-                                        <state key="normal" image="search_icon"/>
+                                        <state key="normal" image="search_icon" backgroundImage="search_selected_icon"/>
+                                        <connections>
+                                            <action selector="tabPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SgR-Uz-aGM"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="815-AU-2B3">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="815-AU-2B3">
                                         <rect key="frame" x="128" y="0.0" width="64" height="44"/>
                                         <state key="normal" image="compose_button"/>
+                                        <connections>
+                                            <action selector="tabPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fhx-i1-1mF"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAv-bH-ygn">
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAv-bH-ygn">
                                         <rect key="frame" x="256" y="0.0" width="64" height="44"/>
-                                        <state key="normal" image="trending_icon"/>
+                                        <state key="normal" image="trending_icon" backgroundImage="trending_selected_icon"/>
+                                        <connections>
+                                            <action selector="tabPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="44H-fH-GYm"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAy-KW-CW6">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAy-KW-CW6">
                                         <rect key="frame" x="192" y="0.0" width="64" height="44"/>
-                                        <state key="normal" image="account_icon"/>
+                                        <state key="normal" image="account_selected_icon"/>
+                                        <connections>
+                                            <action selector="tabPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DAl-iH-aeM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDj-nq-7p3">
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="44"/>
+                                        <state key="normal" image="home_icon" backgroundImage="home_selected_icon"/>
+                                        <connections>
+                                            <action selector="tabPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b6v-hb-xVS"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.15294117647058825" green="0.19607843137254902" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
@@ -183,23 +198,59 @@
             </objects>
             <point key="canvasLocation" x="603" y="2198"/>
         </scene>
+        <!--Trending View Controller-->
+        <scene sceneID="Tvu-i3-wqG">
+            <objects>
+                <viewController id="l9i-8L-9SA" customClass="TrendingViewController" customModule="tumblr" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gg5-Xz-sgf"/>
+                        <viewControllerLayoutGuide type="bottom" id="XSx-Lz-HuG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7ne-ig-F7S">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NPv-gT-Ufq">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="trending_feed" translatesAutoresizingMaskIntoConstraints="NO" id="hcI-7p-NIk">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1217"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="trendingImage" destination="hcI-7p-NIk" id="dMD-C6-Oj7"/>
+                        <outlet property="trendingScroller" destination="NPv-gT-Ufq" id="xeJ-O9-pKg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C3R-cV-mlV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="603" y="2863"/>
+        </scene>
     </scenes>
     <resources>
         <image name="account" width="320" height="524"/>
-        <image name="account_icon" width="35" height="35"/>
+        <image name="account_selected_icon" width="35" height="35"/>
         <image name="chat_icon" width="75" height="96"/>
         <image name="compose_button" width="50" height="35"/>
         <image name="home" width="320" height="524"/>
         <image name="home_icon" width="35" height="35"/>
         <image name="home_overlay" width="320" height="100"/>
+        <image name="home_selected_icon" width="35" height="35"/>
         <image name="home_spinner" width="146" height="146"/>
         <image name="link_icon" width="75" height="95"/>
         <image name="photo_icon" width="75" height="95"/>
         <image name="quote_icon" width="75" height="96"/>
         <image name="search_feed" width="320" height="524"/>
         <image name="search_icon" width="35" height="35"/>
+        <image name="search_selected_icon" width="35" height="35"/>
         <image name="text_icon" width="75" height="95"/>
+        <image name="trending_feed" width="320" height="1217"/>
         <image name="trending_icon" width="35" height="35"/>
+        <image name="trending_selected_icon" width="35" height="35"/>
         <image name="video_icon" width="75" height="95"/>
     </resources>
 </document>

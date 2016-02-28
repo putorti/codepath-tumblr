@@ -23,6 +23,8 @@ class TabBarViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func tabPush(sender: AnyObject) {
+    }
 
     /*
     // MARK: - Navigation
