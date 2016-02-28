@@ -13,18 +13,55 @@ class TabBarViewController: UIViewController {
     @IBOutlet weak var contentView: UIView!
     @IBOutlet var buttons: [UIButton]!
     
+    var homeViewController: UIViewController!
+    var searchViewController: UIViewController!
+    var accountViewController: UIViewController!
+    var trendingViewController: UIViewController!
+    
+    var viewControllers: [UIViewController]!
+    
+    var selectedIndex: Int = 0
+    var previousIndex: Int = 0
+    var previousVC: UIViewController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        homeViewController = storyboard.instantiateViewControllerWithIdentifier("homeBoard")
+        searchViewController = storyboard.instantiateViewControllerWithIdentifier("searchBoard")
+        accountViewController = storyboard.instantiateViewControllerWithIdentifier("accountBoard")
+        trendingViewController = storyboard.instantiateViewControllerWithIdentifier("trendingBoard")
+        viewControllers = [homeViewController, searchViewController, accountViewController, trendingViewController]
+        
+        buttons[selectedIndex].selected = true
+        tabPush(buttons[selectedIndex])
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func tabPush(sender: AnyObject) {
+    @IBAction func tabPush(sender: UIButton) {
+        
+        previousIndex = selectedIndex
+        buttons[previousIndex].selected = false
+        sender.selected = true
+        
+        print("last", previousIndex)
+        print(sender.tag)
+        
+        selectedIndex = sender.tag
+        /*previousVC = viewControllers[previousIndex]
+        previousVC.willMoveToParentViewController(nil)
+        previousVC.view.removeFromSuperview()
+        previousVC.removeFromParentViewController()
+        
+        let vc = viewControllers[selectedIndex]
+        addChildViewController(vc)
+        vc.view.frame = contentView.bounds
+        contentView.addSubview(vc.view)
+        vc.didMoveToParentViewController(self)*/
     }
 
     /*

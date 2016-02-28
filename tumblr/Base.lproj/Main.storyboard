@@ -21,36 +21,40 @@
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hE-LN-j4C">
-                                        <rect key="frame" x="64" y="0.0" width="64" height="44"/>
-                                        <state key="normal" image="search_icon" backgroundImage="search_selected_icon"/>
+                                        <rect key="frame" x="77" y="4" width="35" height="35"/>
+                                        <state key="normal" image="search_icon"/>
+                                        <state key="selected" image="search_selected_icon"/>
                                         <connections>
                                             <action selector="tabPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SgR-Uz-aGM"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="815-AU-2B3">
-                                        <rect key="frame" x="128" y="0.0" width="64" height="44"/>
+                                    <button opaque="NO" tag="2" contentMode="TopLeft" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="815-AU-2B3">
+                                        <rect key="frame" x="136" y="4" width="50" height="35"/>
                                         <state key="normal" image="compose_button"/>
                                         <connections>
                                             <action selector="tabPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fhx-i1-1mF"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAv-bH-ygn">
-                                        <rect key="frame" x="256" y="0.0" width="64" height="44"/>
-                                        <state key="normal" image="trending_icon" backgroundImage="trending_selected_icon"/>
+                                        <rect key="frame" x="270" y="4" width="35" height="35"/>
+                                        <state key="normal" image="trending_icon"/>
+                                        <state key="selected" image="trending_selected_icon"/>
                                         <connections>
                                             <action selector="tabPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="44H-fH-GYm"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAy-KW-CW6">
-                                        <rect key="frame" x="192" y="0.0" width="64" height="44"/>
-                                        <state key="normal" image="account_selected_icon"/>
+                                        <rect key="frame" x="209" y="4" width="35" height="35"/>
+                                        <state key="normal" image="account_icon"/>
+                                        <state key="selected" image="account_selected_icon"/>
                                         <connections>
                                             <action selector="tabPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DAl-iH-aeM"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDj-nq-7p3">
-                                        <rect key="frame" x="0.0" y="0.0" width="64" height="44"/>
-                                        <state key="normal" image="home_icon" backgroundImage="home_selected_icon"/>
+                                        <rect key="frame" x="17" y="4" width="35" height="35"/>
+                                        <state key="normal" image="home_icon"/>
+                                        <state key="selected" image="home_selected_icon"/>
                                         <connections>
                                             <action selector="tabPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b6v-hb-xVS"/>
                                         </connections>
@@ -238,6 +242,7 @@
     </scenes>
     <resources>
         <image name="account" width="320" height="524"/>
+        <image name="account_icon" width="35" height="35"/>
         <image name="account_selected_icon" width="35" height="35"/>
         <image name="chat_icon" width="75" height="96"/>
         <image name="compose_button" width="50" height="35"/>
