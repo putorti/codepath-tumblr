@@ -31,10 +31,9 @@ class TabBarViewController: UIViewController {
         
         homeViewController = storyboard.instantiateViewControllerWithIdentifier("homeBoard")
         searchViewController = storyboard.instantiateViewControllerWithIdentifier("searchBoard")
-        composeViewController = storyboard.instantiateViewControllerWithIdentifier("composeBoard")
         accountViewController = storyboard.instantiateViewControllerWithIdentifier("accountBoard")
         trendingViewController = storyboard.instantiateViewControllerWithIdentifier("trendingBoard")
-        viewControllers = [homeViewController, searchViewController, composeViewController, accountViewController, trendingViewController]
+        viewControllers = [homeViewController, searchViewController, accountViewController, trendingViewController]
         
         buttons[selectedIndex].selected = true
         tabPush(buttons[selectedIndex])

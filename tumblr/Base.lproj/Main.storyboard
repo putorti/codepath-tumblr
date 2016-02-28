@@ -32,14 +32,14 @@
                                             <action selector="tabPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SgR-Uz-aGM"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="2" contentMode="TopLeft" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="815-AU-2B3">
+                                    <button opaque="NO" contentMode="TopLeft" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="815-AU-2B3">
                                         <rect key="frame" x="136" y="4" width="50" height="35"/>
                                         <state key="normal" image="compose_button"/>
                                         <connections>
-                                            <action selector="tabPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fhx-i1-1mF"/>
+                                            <segue destination="oq9-9v-f07" kind="modal" id="iZs-k7-s0l"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAv-bH-ygn">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAv-bH-ygn">
                                         <rect key="frame" x="270" y="4" width="35" height="35"/>
                                         <state key="normal" image="trending_icon"/>
                                         <state key="selected" image="trending_selected_icon"/>
@@ -47,7 +47,7 @@
                                             <action selector="tabPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="44H-fH-GYm"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAy-KW-CW6">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAy-KW-CW6">
                                         <rect key="frame" x="209" y="4" width="35" height="35"/>
                                         <state key="normal" image="account_icon"/>
                                         <state key="selected" image="account_selected_icon"/>
@@ -101,7 +101,7 @@
                                 <rect key="frame" x="88" y="181" width="144" height="144"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="home_overlay" translatesAutoresizingMaskIntoConstraints="NO" id="kVt-ls-V8i">
-                                <rect key="frame" x="0.0" y="333" width="320" height="100"/>
+                                <rect key="frame" x="0.0" y="290" width="320" height="100"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -124,7 +124,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="search_feed" translatesAutoresizingMaskIntoConstraints="NO" id="xEB-MZ-wGZ">
-                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -147,7 +147,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="account" translatesAutoresizingMaskIntoConstraints="NO" id="cbE-75-6Yq">
-                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -198,10 +198,21 @@
                                 <state key="normal" title="Nevermind">
                                     <color key="titleColor" red="0.1529411765" green="0.1960784314" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="closeModal:" destination="oq9-9v-f07" eventType="touchUpInside" id="sT9-nH-wNY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.15294117647058825" green="0.21176470588235294" blue="0.29019607843137257" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="chatButton" destination="voy-JG-tC9" id="ZIx-gm-qHa"/>
+                        <outlet property="linkButton" destination="QS3-iR-KLR" id="ont-jK-7k0"/>
+                        <outlet property="photoButton" destination="txL-p4-ogA" id="Bp5-IG-Us1"/>
+                        <outlet property="quoteButton" destination="Bdh-vK-0gi" id="Kob-EV-npe"/>
+                        <outlet property="textButton" destination="ptw-h4-zuN" id="ypH-hi-Mcr"/>
+                        <outlet property="videoButton" destination="ZfG-3s-DTb" id="gcD-rY-Lhg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="THj-Mw-8gu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -220,7 +231,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NPv-gT-Ufq">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="trending_feed" translatesAutoresizingMaskIntoConstraints="NO" id="hcI-7p-NIk">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="1217"/>
@@ -228,7 +239,7 @@
                                 </subviews>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.16078431369999999" green="0.21176470589999999" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="trendingImage" destination="hcI-7p-NIk" id="dMD-C6-Oj7"/>
