@@ -32,7 +32,8 @@ class ComposeViewController: UIViewController {
         dismissViewControllerAnimated(true, completion: nil)
     }
     
-    func viewWillAppear() {
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         print("view will appear!")
         textButton.frame.origin.y = 526
         photoButton.frame.origin.y = 526
@@ -42,15 +43,16 @@ class ComposeViewController: UIViewController {
         videoButton.frame.origin.y = 652
     }
     
-    /*func viewDidAppear() {
-        textButton.frame.origin.y = 126
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        print("view did appear!")
+        /*textButton.frame.origin.y = 126
         photoButton.frame.origin.y = 126
         quoteButton.frame.origin.y = 126
         linkButton.frame.origin.y = 252
         chatButton.frame.origin.y = 252
-        videoButton.frame.origin.y = 252
-    }*/
-    
+        videoButton.frame.origin.y = 252*/
+    }
 
     /*
     // MARK: - Navigation
