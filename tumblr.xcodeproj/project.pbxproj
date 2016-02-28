@@ -14,6 +14,7 @@
 		968CE2671C83916600386CAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 968CE2651C83916600386CAE /* LaunchScreen.storyboard */; };
 		968CE2721C83916600386CAE /* tumblrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968CE2711C83916600386CAE /* tumblrTests.swift */; };
 		968CE27D1C83916600386CAE /* tumblrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968CE27C1C83916600386CAE /* tumblrUITests.swift */; };
+		968CE28B1C83921000386CAE /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968CE28A1C83921000386CAE /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		968CE2781C83916600386CAE /* tumblrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tumblrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		968CE27C1C83916600386CAE /* tumblrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tumblrUITests.swift; sourceTree = "<group>"; };
 		968CE27E1C83916600386CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		968CE28A1C83921000386CAE /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				968CE25C1C83916600386CAE /* AppDelegate.swift */,
 				968CE25E1C83916600386CAE /* ViewController.swift */,
 				968CE2601C83916600386CAE /* Main.storyboard */,
+				968CE28C1C83921300386CAE /* View Controllers */,
 				968CE2631C83916600386CAE /* Assets.xcassets */,
 				968CE2651C83916600386CAE /* LaunchScreen.storyboard */,
 				968CE2681C83916600386CAE /* Info.plist */,
@@ -123,6 +126,14 @@
 				968CE27E1C83916600386CAE /* Info.plist */,
 			);
 			path = tumblrUITests;
+			sourceTree = "<group>";
+		};
+		968CE28C1C83921300386CAE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				968CE28A1C83921000386CAE /* TabBarViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				968CE25F1C83916600386CAE /* ViewController.swift in Sources */,
+				968CE28B1C83921000386CAE /* TabBarViewController.swift in Sources */,
 				968CE25D1C83916600386CAE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
