@@ -15,6 +15,7 @@ class TabBarViewController: UIViewController {
     
     var homeViewController: UIViewController!
     var searchViewController: UIViewController!
+    var composeViewController: UIViewController!
     var accountViewController: UIViewController!
     var trendingViewController: UIViewController!
     
@@ -30,9 +31,10 @@ class TabBarViewController: UIViewController {
         
         homeViewController = storyboard.instantiateViewControllerWithIdentifier("homeBoard")
         searchViewController = storyboard.instantiateViewControllerWithIdentifier("searchBoard")
+        composeViewController = storyboard.instantiateViewControllerWithIdentifier("composeBoard")
         accountViewController = storyboard.instantiateViewControllerWithIdentifier("accountBoard")
         trendingViewController = storyboard.instantiateViewControllerWithIdentifier("trendingBoard")
-        viewControllers = [homeViewController, searchViewController, accountViewController, trendingViewController]
+        viewControllers = [homeViewController, searchViewController, composeViewController, accountViewController, trendingViewController]
         
         buttons[selectedIndex].selected = true
         tabPush(buttons[selectedIndex])
@@ -52,7 +54,7 @@ class TabBarViewController: UIViewController {
         print(sender.tag)
         
         selectedIndex = sender.tag
-        /*previousVC = viewControllers[previousIndex]
+        previousVC = viewControllers[previousIndex]
         previousVC.willMoveToParentViewController(nil)
         previousVC.view.removeFromSuperview()
         previousVC.removeFromParentViewController()
@@ -61,7 +63,7 @@ class TabBarViewController: UIViewController {
         addChildViewController(vc)
         vc.view.frame = contentView.bounds
         contentView.addSubview(vc.view)
-        vc.didMoveToParentViewController(self)*/
+        vc.didMoveToParentViewController(self)
     }
 
     /*
