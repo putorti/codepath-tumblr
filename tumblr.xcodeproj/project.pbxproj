@@ -15,6 +15,11 @@
 		968CE2721C83916600386CAE /* tumblrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968CE2711C83916600386CAE /* tumblrTests.swift */; };
 		968CE27D1C83916600386CAE /* tumblrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968CE27C1C83916600386CAE /* tumblrUITests.swift */; };
 		968CE28B1C83921000386CAE /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968CE28A1C83921000386CAE /* TabBarViewController.swift */; };
+		968CE28E1C83962A00386CAE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968CE28D1C83962A00386CAE /* HomeViewController.swift */; };
+		968CE2901C83963000386CAE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968CE28F1C83963000386CAE /* SearchViewController.swift */; };
+		968CE2921C83963500386CAE /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968CE2911C83963500386CAE /* AccountViewController.swift */; };
+		968CE2941C83963F00386CAE /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968CE2931C83963F00386CAE /* ComposeViewController.swift */; };
+		968CE2961C83964500386CAE /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968CE2951C83964500386CAE /* TrendingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		968CE27C1C83916600386CAE /* tumblrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tumblrUITests.swift; sourceTree = "<group>"; };
 		968CE27E1C83916600386CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		968CE28A1C83921000386CAE /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		968CE28D1C83962A00386CAE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		968CE28F1C83963000386CAE /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		968CE2911C83963500386CAE /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		968CE2931C83963F00386CAE /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		968CE2951C83964500386CAE /* TrendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +142,11 @@
 			isa = PBXGroup;
 			children = (
 				968CE28A1C83921000386CAE /* TabBarViewController.swift */,
+				968CE28D1C83962A00386CAE /* HomeViewController.swift */,
+				968CE28F1C83963000386CAE /* SearchViewController.swift */,
+				968CE2911C83963500386CAE /* AccountViewController.swift */,
+				968CE2931C83963F00386CAE /* ComposeViewController.swift */,
+				968CE2951C83964500386CAE /* TrendingViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -267,9 +282,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				968CE2901C83963000386CAE /* SearchViewController.swift in Sources */,
+				968CE2961C83964500386CAE /* TrendingViewController.swift in Sources */,
 				968CE25F1C83916600386CAE /* ViewController.swift in Sources */,
+				968CE2921C83963500386CAE /* AccountViewController.swift in Sources */,
 				968CE28B1C83921000386CAE /* TabBarViewController.swift in Sources */,
 				968CE25D1C83916600386CAE /* AppDelegate.swift in Sources */,
+				968CE28E1C83962A00386CAE /* HomeViewController.swift in Sources */,
+				968CE2941C83963F00386CAE /* ComposeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
