@@ -160,7 +160,7 @@
         <!--Compose View Controller-->
         <scene sceneID="nwu-2U-kci">
             <objects>
-                <viewController storyboardIdentifier="composeBoard" id="oq9-9v-f07" customClass="ComposeViewController" customModule="tumblr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="composeBoard" modalPresentationStyle="overCurrentContext" id="oq9-9v-f07" customClass="ComposeViewController" customModule="tumblr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xqx-Hj-7Jh"/>
                         <viewControllerLayoutGuide type="bottom" id="4uo-dV-N6D"/>
@@ -194,16 +194,16 @@
                                 <state key="normal" image="video_icon"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYb-Mp-T4s">
-                                <rect key="frame" x="93" y="502" width="135" height="30"/>
+                                <rect key="frame" x="93" y="457" width="135" height="30"/>
                                 <state key="normal" title="Nevermind">
-                                    <color key="titleColor" red="0.1529411765" green="0.1960784314" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="closeModal:" destination="oq9-9v-f07" eventType="touchUpInside" id="sT9-nH-wNY"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.15294117647058825" green="0.21176470588235294" blue="0.29019607843137257" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.15294117647058825" green="0.21176470588235294" blue="0.29019607843137257" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="chatButton" destination="voy-JG-tC9" id="ZIx-gm-qHa"/>
