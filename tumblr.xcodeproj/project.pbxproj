@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9684E03B1C8450CF00A318A4 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9684E0391C8450CF00A318A4 /* BaseTransition.swift */; };
+		9684E03C1C8450CF00A318A4 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9684E03A1C8450CF00A318A4 /* FadeTransition.swift */; };
 		968CE25D1C83916600386CAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968CE25C1C83916600386CAE /* AppDelegate.swift */; };
 		968CE25F1C83916600386CAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968CE25E1C83916600386CAE /* ViewController.swift */; };
 		968CE2621C83916600386CAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 968CE2601C83916600386CAE /* Main.storyboard */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9684E0391C8450CF00A318A4 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
+		9684E03A1C8450CF00A318A4 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
 		968CE2591C83916600386CAE /* tumblr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tumblr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		968CE25C1C83916600386CAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		968CE25E1C83916600386CAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 		968CE25B1C83916600386CAE /* tumblr */ = {
 			isa = PBXGroup;
 			children = (
+				9684E0391C8450CF00A318A4 /* BaseTransition.swift */,
+				9684E03A1C8450CF00A318A4 /* FadeTransition.swift */,
 				968CE25C1C83916600386CAE /* AppDelegate.swift */,
 				968CE25E1C83916600386CAE /* ViewController.swift */,
 				968CE2601C83916600386CAE /* Main.storyboard */,
@@ -286,7 +292,9 @@
 				968CE2961C83964500386CAE /* TrendingViewController.swift in Sources */,
 				968CE25F1C83916600386CAE /* ViewController.swift in Sources */,
 				968CE2921C83963500386CAE /* AccountViewController.swift in Sources */,
+				9684E03B1C8450CF00A318A4 /* BaseTransition.swift in Sources */,
 				968CE28B1C83921000386CAE /* TabBarViewController.swift in Sources */,
+				9684E03C1C8450CF00A318A4 /* FadeTransition.swift in Sources */,
 				968CE25D1C83916600386CAE /* AppDelegate.swift in Sources */,
 				968CE28E1C83962A00386CAE /* HomeViewController.swift in Sources */,
 				968CE2941C83963F00386CAE /* ComposeViewController.swift in Sources */,
@@ -516,6 +524,7 @@
 				968CE2831C83916600386CAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		968CE2841C83916600386CAE /* Build configuration list for PBXNativeTarget "tumblrTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +533,7 @@
 				968CE2861C83916600386CAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		968CE2871C83916600386CAE /* Build configuration list for PBXNativeTarget "tumblrUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +542,7 @@
 				968CE2891C83916600386CAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

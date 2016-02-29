@@ -17,6 +17,8 @@ class ComposeViewController: UIViewController {
     @IBOutlet weak var chatButton: UIButton!
     @IBOutlet weak var videoButton: UIButton!
     
+    var fadeTransition: FadeTransition!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -57,14 +59,26 @@ class ComposeViewController: UIViewController {
         })
     }
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+            
+        // Access the ViewController that you will be transitioning too, a.k.a, the destinationViewController.
+        var destinationViewController = segue.destinationViewController
+        
+        // Set the modal presentation style of your destinationViewController to be custom.
+        destinationViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+        
+        // Create a new instance of your fadeTransition.
+        fadeTransition = FadeTransition()
+        
+        // Tell the destinationViewController's  transitioning delegate to look in fadeTransition for transition instructions.
+        destinationViewController.transitioningDelegate = fadeTransition
+        
+        // Adjust the transition duration. (seconds)
+        fadeTransition.duration = 1.0
+
     }
-    */
 
 }
