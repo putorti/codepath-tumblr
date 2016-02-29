@@ -15,27 +15,25 @@ class TabBarViewController: UIViewController {
     
     var homeViewController: UIViewController!
     var searchViewController: UIViewController!
-    var composeViewController: UIViewController!
     var accountViewController: UIViewController!
     var trendingViewController: UIViewController!
     
     var viewControllers: [UIViewController]!
     
     var selectedIndex: Int = 0
-    var previousIndex: Int = 0
     var previousVC: UIViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        homeViewController = storyboard.instantiateViewControllerWithIdentifier("homeBoard")
-        searchViewController = storyboard.instantiateViewControllerWithIdentifier("searchBoard")
-        accountViewController = storyboard.instantiateViewControllerWithIdentifier("accountBoard")
-        trendingViewController = storyboard.instantiateViewControllerWithIdentifier("trendingBoard")
+        homeViewController = storyboard.instantiateViewControllerWithIdentifier("homeBoard") // 0
+        searchViewController = storyboard.instantiateViewControllerWithIdentifier("searchBoard") // 1
+        accountViewController = storyboard.instantiateViewControllerWithIdentifier("accountBoard") // 2
+        trendingViewController = storyboard.instantiateViewControllerWithIdentifier("trendingBoard") // 3
+        
         viewControllers = [homeViewController, searchViewController, accountViewController, trendingViewController]
         
-        buttons[selectedIndex].selected = true
         tabPush(buttons[selectedIndex])
     }
 
@@ -45,19 +43,16 @@ class TabBarViewController: UIViewController {
     
     @IBAction func tabPush(sender: UIButton) {
         
-        previousIndex = selectedIndex
-        buttons[previousIndex].selected = false
-        sender.selected = true
-        
-        print("last", previousIndex)
-        print(sender.tag)
-        
+        let previousIndex = selectedIndex
         selectedIndex = sender.tag
+        buttons[previousIndex].selected = false
+        
         previousVC = viewControllers[previousIndex]
         previousVC.willMoveToParentViewController(nil)
         previousVC.view.removeFromSuperview()
         previousVC.removeFromParentViewController()
         
+        sender.selected = true
         let vc = viewControllers[selectedIndex]
         addChildViewController(vc)
         vc.view.frame = contentView.bounds

@@ -71,11 +71,10 @@
                     </view>
                     <connections>
                         <outlet property="contentView" destination="NOC-OH-ZHP" id="lda-hX-NUi"/>
-                        <outletCollection property="buttons" destination="bDj-nq-7p3" collectionClass="NSMutableArray" id="Mdg-dM-nUF"/>
-                        <outletCollection property="buttons" destination="3hE-LN-j4C" collectionClass="NSMutableArray" id="5kS-Dt-5ne"/>
-                        <outletCollection property="buttons" destination="815-AU-2B3" collectionClass="NSMutableArray" id="610-ln-KJv"/>
-                        <outletCollection property="buttons" destination="JAy-KW-CW6" collectionClass="NSMutableArray" id="xDG-uQ-OgC"/>
-                        <outletCollection property="buttons" destination="BAv-bH-ygn" collectionClass="NSMutableArray" id="hJ0-zC-hO2"/>
+                        <outletCollection property="buttons" destination="bDj-nq-7p3" collectionClass="NSMutableArray" id="KFV-ug-LmP"/>
+                        <outletCollection property="buttons" destination="3hE-LN-j4C" collectionClass="NSMutableArray" id="7N8-Nl-Ff8"/>
+                        <outletCollection property="buttons" destination="JAy-KW-CW6" collectionClass="NSMutableArray" id="nHv-i3-Bpa"/>
+                        <outletCollection property="buttons" destination="BAv-bH-ygn" collectionClass="NSMutableArray" id="5ph-sS-FeI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
